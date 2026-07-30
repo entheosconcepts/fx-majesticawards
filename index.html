@@ -144,9 +144,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
 .divider{border:none;border-top:1px solid var(--border);margin:0 32px}
 
 /* LIGHTBOX */
-.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:300;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .25s;cursor:zoom-out}
+.lightbox{position:fixed;inset:0;background:#000;z-index:300;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .25s;cursor:zoom-out}
 .lightbox.open{opacity:1;visibility:visible}
-.lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;transform:scale(.92);transition:transform .25s}
+.lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:8px;background:#000;transform:scale(.92);transition:transform .25s}
 .lightbox.open img{transform:scale(1)}
 .lb-close{position:fixed;top:20px;right:24px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;width:42px;height:42px;border-radius:50%;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s}
 .lb-close:hover{background:rgba(255,255,255,.2)}
